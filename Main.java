@@ -11,7 +11,7 @@ public class Main {
     mytree = new Ruffles(mytree);
     mytree = new LEDS(mytree);
     mytree = new BallsBlue(mytree);
-    smytree = new BallsRed(mytree);
+    mytree = new BallsRed(mytree);
     mytree = new Star(mytree);
 
     System.out.println("This Tree has: " + mytree.getDescription() + ".");
