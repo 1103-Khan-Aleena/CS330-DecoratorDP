@@ -1,3 +1,7 @@
-# CS330-DecoratorDP
-CS330 HW2 Decorator Design Pattern
-This is my submission for the CS 330 Design Patterns course. The program demonstrates the Decorator Design Pattern by allowing the calculation of the total price of a tree with any combination of decorations. A key constraint is that if a user attempts to add a second star to the tree, the program will issue a warning indicating that the tree already has a star, and the additional star will not be added to the total price.
+# CS 330 Design Patterns - Decorator Design Pattern
+
+This program is a submission for the CS 330 Design Patterns course. It demonstrates the Decorator Design Pattern by allowing users to add various decorations to a tree and calculate the total cost dynamically.
+
+A key feature of the program is that it prevents adding multiple stars: if a user tries to add a second star, the program displays a warning indicating that the tree already has a star, and the additional star is not added to the description or total price.
+
+This project highlights the flexibility of the Decorator Pattern in extending object behavior without modifying existing code.
