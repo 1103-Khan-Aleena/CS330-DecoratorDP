@@ -1,4 +1,4 @@
-# CS 330 Design Patterns - Decorator Design Patters
+# CS 330 Design Patterns - Decorator Design Pattern
 
 This program is a submission for the CS 330 Design Patterns course. It demonstrates the Decorator Design Pattern by allowing users to add various decorations to a tree and calculate the total cost dynamically.
 
