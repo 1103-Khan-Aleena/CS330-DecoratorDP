@@ -1,6 +1,8 @@
 public class Star extends OrnDecorator {
 
-  private boolean hasStar(Trees trees) { 
+    private boolean isDuplicate; 
+
+    private boolean hasStar(Trees trees) { 
     while (trees instanceof OrnDecorator) {// while the tree is an ornament
         if (trees instanceof Star) { // if the tree (ornament) is a star
             return true; // we found a star
@@ -14,14 +16,13 @@ public class Star extends OrnDecorator {
         // Check if the tree already has a star
         if (hasStar(trees)) {
             System.err.println("\nYou cannot add more than one star, please choose another ornament!\n");
-            this.trees = trees;
-        } else {
+            isDuplicate=true;
+        }
             this.trees = trees;
         }
-    }
 
     public String getDescription() {
-        if (hasStar(trees)) {
+        if (isDuplicate) {
             return trees.getDescription(); // shouldnt add extra star in description
          }
         return trees.getDescription() + ", Star";
@@ -29,11 +30,12 @@ public class Star extends OrnDecorator {
 
     public int cost() {
         // Only charge if this is the first star
-        if (hasStar(trees)) {
+        if (isDuplicate) {
             return trees.cost(); // shouldnt add extra cost
         }
         return 4 + trees.cost();
     }
+
 
 
 }

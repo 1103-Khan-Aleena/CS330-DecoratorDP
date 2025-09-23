@@ -8,6 +8,7 @@ public class Main {
     Trees mytree = new ColoBlue();
   
     mytree = new Star(mytree);
+    mytree = new Star(mytree);
     mytree = new Ruffles(mytree);
     mytree = new LEDS(mytree);
     mytree = new BallsBlue(mytree);
